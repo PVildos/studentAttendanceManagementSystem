@@ -11,110 +11,122 @@
 
 <body style="flex-direction: column;">
 <section id="retrieveData" style="flex-direction: row;">
+    <h2>Retrieve Student List</h2>
     <form id="studentList">
         <input type="button" id="getStudentListButton" value="Student List">
     </form>
-
+    <br>
+    <h2>Retrieve Course List</h2>
     <form id="courseList">
         <input type="button" id="getCourseListButton" value="Courses List">
     </form >
+    <br>
 </section>
 
 <section id="studentForms" style="flex-direction: row;">
-
+    <h2>Add Student</h2>
     <form id="addNewStudent">
-        <label for="newStudentFullName">Label Text</label>
+        <label for="newStudentFullName">Full Name</label>
         <input type="text" id="newStudentFullName" required name="newStudentFullName">
-        <label for="newStudentEmail">Label Text</label>
+        <label for="newStudentEmail">Email</label>
         <input type="email" id="newStudentEmail" required name="newStudentEmail">
-        <label for="newStudentRegisteredCourses">Label Text</label>
+        <label for="newStudentRegisteredCourses">Registered Course IDs</label>
         <input type="text" id="newStudentRegisteredCourses" required name="newStudentRegisteredCourses">
         <input type="button" id="newStudentButton" value="Add New Student">
     </form>
+    <br>
 
     <form id="updateStudentInfo">
-        <label for="updateStudentId">Label Text</label>
+        <h2>Update Student</h2>
+        <label for="updateStudentId">Student ID</label>
         <input type="number" id="updateStudentId" required name="updateStudentId">
-        <label for="updateStudentFullName">Label Text</label>
+        <label for="updateStudentFullName">Full Name</label>
         <input type="text" id="updateStudentFullName" required name="updateStudentFullName">
-        <label for="updateStudentEmail">Label Text</label>
+        <label for="updateStudentEmail">Email</label>
         <input type="email" id="updateStudentEmail" required name="updateStudentEmail">
-        <label for="updateStudentRegisteredCourses">Label Text</label>
+        <label for="updateStudentRegisteredCourses">Registered Courses</label>
         <input type="text" id="updateStudentRegisteredCourses" required name="updateStudentRegisteredCourses">
         <input type="button" id="updateStudentButton" value="Update Studant Information">
     </form>
-
+    <br>
 </section>
 
 <section id="createCourse" style="flex-direction: row;">
+    <h2>Add Course</h2>
     <form id="newCourse">
-        <label for="newCourseName">Label Text</label>
+        <label for="newCourseName">Course Name</label>
         <input type="text" id="newCourseName" required name="newCourseName">
-        <label for="newCourseInstructor">Label Text</label>
+        <label for="newCourseInstructor">Instructor</label>
         <input type="email" id="newCourseInstructor" required name="newCourseInstructor">
         <input type="button" id="newCourseButton" value="Add New Course">
     </form>
+    <br>
 </section>
 
 <section id="studentButtons" style="flex-direction: row;">
-
+    <h2>Find Student</h2>
     <form id="getStudentInfo">
-        <label for="getStudentId">Label Text</label>
+        <label for="getStudentId">Student ID</label>
         <input type="number" id="getStudentId" required name="getStudentId">
         <input type="button" id="getStudentByIdButton" value="Retrieve Student Information">
     </form>
-
+    <br>
+    <h2>Delete Student</h2>
     <form id="deleteStudent">
-        <label for="deleteStudentId">Label Text</label>
+        <label for="deleteStudentId">Student ID</label>
         <input type="number" id="deleteStudentId" required name="deleteStudentId">
         <input type="button" id="deleteStudentButton" value="Delete Student">
     </form>
-
+    <br>
 </section>
 
 <section id="attendanceForms" style="flex-direction: row;">
+    <h2>Record Attendance</h2>
     <form id="recordNewAttendance">
-        <label for="newAttendanceStudentId">Label Text</label>
+        <label for="newAttendanceStudentId">Student ID</label>
         <input type="number" id="newAttendanceStudentId" required name="newAttendanceStudentId">
-        <label for="newAttendanceCourseId">Label Text</label>
+        <label for="newAttendanceCourseId">Course ID</label>
         <input type="number" id="newAttendanceCourseId" required name="newAttendanceCourseId">
-        <label for="newAttendanceLessonDate">Label Text</label>
+        <label for="newAttendanceLessonDate">Lesson Date</label>
         <input type="datetime-local" id="newAttendanceLessonDate" required name="newAttendanceLessonDate">
-        <label for="newAttendanceIsPresent">Label Text</label>
+        <label for="newAttendanceIsPresent">Presence ("true" or "false")</label>
         <input type="text" id="newAttendanceIsPresent" required name="newAttendanceIsPresent">
         <input type="button" id="newAttendanceButton" value="Add New Attendance Record">
     </form>
-
+    <br>
+    <h2>Update Attendance Record</h2>
     <form id="updateAttendanceRecord">
-        <label for="updateAttendanceId">Label Text</label>
+        <label for="updateAttendanceId">Attendance ID</label>
         <input type="number" id="updateAttendanceId" required name="updateAttendanceId">
-        <label for="updateAttendanceStudentId">Label Text</label>
+        <label for="updateAttendanceStudentId">Student ID</label>
         <input type="number" id="updateAttendanceStudentId" required name="updateAttendanceStudentId">
-        <label for="updateAttendanceCourseId">Label Text</label>
+        <label for="updateAttendanceCourseId">Course ID</label>
         <input type="number" id="updateAttendanceCourseId" required name="updateAttendanceCourseId">
-        <label for="updateAttendanceLessonDate">Label Text</label>
+        <label for="updateAttendanceLessonDate">Lesson Date</label>
         <input type="datetime-local" id="updateAttendanceLessonDate" required name="updateAttendanceLessonDate">
-        <label for="updateAttendanceIsPresent">Label Text</label>
+        <label for="updateAttendanceIsPresent">Presence ("true" or "false")</label>
         <input type="text" id="updateAttendanceIsPresent" required name="updateAttendanceIsPresent">
         <input type="button" id="updateAttendanceButton" value="Update Attendance Record">
     </form>
-
+    <br>
 
 </section>
 
 <section id="attendanceButtons" style="flex-direction: row;">
+    <h2>Find Attendance Records</h2>
     <form id="getAttendanceRecord">
-        <label for="getAttendanceId">Label Text</label>
+        <label for="getAttendanceId">Attendance ID</label>
         <input type="number" id="getAttendanceId" required name="getAttendanceId">
-        <label for="getAttendanceStudentId">Label Text</label>
+        <label for="getAttendanceStudentId">Student ID</label>
         <input type="number" id="getAttendanceStudentId" required name="getAttendanceStudentId">
-        <label for="getAttendanceCourseId">Label Text</label>
+        <label for="getAttendanceCourseId">Course ID</label>
         <input type="number" id="getAttendanceCourseId" required name="getAttendanceCourseId">
         <input type="button" id="getAttendanceByIdButton" value="Retrieve Attendance Record">
     </form>
-
+    <br>
     <form id="deleteAttendanceRecord">
-        <label for="deleteAttendanceId">Label Text</label>
+        <h2>Delete Attendance Record</h2>
+        <label for="deleteAttendanceId">Attendance ID</label>
         <input type="number" id="deleteAttendanceId" required name="deleteAttendanceId">
         <input type="button" id="deleteAttendanceButton" value="Delete Attendance Record">
     </form>
