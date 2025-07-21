@@ -35,15 +35,6 @@ A lightweight Java Servlet-based web application for managing students, courses,
 * ├── studentAttendanceManagementSystem.war 
 * ├── README.md
 
-## Rest Endpoints
-
-* GET	/students	View all students
-* POST	/students	Add a new student
-* PUT	/students?studentId=ID	Update student by ID
-* DELETE	/students?studentId=ID	Delete student by ID
-* GET	/attendance?studentId=ID&courseId=ID	View attendance
-* POST	/attendance	Record attendance
-
 ## How to deploy
 
 Drop the .war file into TOMCAT_HOME/webapps/
