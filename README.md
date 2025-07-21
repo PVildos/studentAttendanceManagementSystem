@@ -28,9 +28,10 @@ A lightweight Java Servlet-based web application for managing students, courses,
 
 * studentAttendanceManagementSystem/
 * ├── src/ # Java source files 
-* │ └── com/example/... # Servlets, models, storage 
-* ├── WebContent/ # HTML, JS, and web.xml 
-* ├── WEB-INF/ # Deployment descriptor and compiled classes 
+* │ └── com/example/... # Servlets, model, storage
+* ├── out/production/... # class files 
+* ├── WebContent/ # HTML, JS
+* ├── WEB-INF/ # web.xml  
 * ├── studentAttendanceManagementSystem.war 
 * ├── README.md
 
@@ -43,7 +44,7 @@ A lightweight Java Servlet-based web application for managing students, courses,
 * GET	/attendance?studentId=ID&courseId=ID	View attendance
 * POST	/attendance	Record attendance
 
-# How to deploy
+## How to deploy
 
 Drop the .war file into TOMCAT_HOME/webapps/
 Start Tomcat and visit: http://localhost:8080/studentAttendanceManagementSystem/index.html
