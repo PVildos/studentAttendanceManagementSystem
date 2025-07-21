@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="form.js"></script>
+</head>
+
+<body style="flex-direction: column;">
+<section id="retrieveData" style="flex-direction: row;">
+    <form id="studentList">
+        <input type="button" id="getStudentListButton" value="Student List">
+    </form>
+
+    <form id="courseList">
+        <input type="button" id="getCourseListButton" value="Courses List">
+    </form >
+</section>
+
+<section id="studentForms" style="flex-direction: row;">
+
+    <form id="addNewStudent">
+        <label for="newStudentFullName">Label Text</label>
+        <input type="text" id="newStudentFullName" required name="newStudentFullName">
+        <label for="newStudentEmail">Label Text</label>
+        <input type="email" id="newStudentEmail" required name="newStudentEmail">
+        <label for="newStudentRegisteredCourses">Label Text</label>
+        <input type="text" id="newStudentRegisteredCourses" required name="newStudentRegisteredCourses">
+        <input type="button" id="newStudentButton" value="Add New Student">
+    </form>
+
+    <form id="updateStudentInfo">
+        <label for="updateStudentId">Label Text</label>
+        <input type="number" id="updateStudentId" required name="updateStudentId">
+        <label for="updateStudentFullName">Label Text</label>
+        <input type="text" id="updateStudentFullName" required name="updateStudentFullName">
+        <label for="updateStudentEmail">Label Text</label>
+        <input type="email" id="updateStudentEmail" required name="updateStudentEmail">
+        <label for="updateStudentRegisteredCourses">Label Text</label>
+        <input type="text" id="updateStudentRegisteredCourses" required name="updateStudentRegisteredCourses">
+        <input type="button" id="updateStudentButton" value="Update Studant Information">
+    </form>
+
+</section>
+
+<section id="createCourse" style="flex-direction: row;">
+    <form id="newCourse">
+        <label for="newCourseName">Label Text</label>
+        <input type="text" id="newCourseName" required name="newCourseName">
+        <label for="newCourseInstructor">Label Text</label>
+        <input type="email" id="newCourseInstructor" required name="newCourseInstructor">
+        <input type="button" id="newCourseButton" value="Add New Course">
+    </form>
+</section>
+
+<section id="studentButtons" style="flex-direction: row;">
+
+    <form id="getStudentInfo">
+        <label for="getStudentId">Label Text</label>
+        <input type="number" id="getStudentId" required name="getStudentId">
+        <input type="button" id="getStudentByIdButton" value="Retrieve Student Information">
+    </form>
+
+    <form id="deleteStudent">
+        <label for="deleteStudentId">Label Text</label>
+        <input type="number" id="deleteStudentId" required name="deleteStudentId">
+        <input type="button" id="deleteStudentButton" value="Delete Student">
+    </form>
+
+</section>
+
+<section id="attendanceForms" style="flex-direction: row;">
+    <form id="recordNewAttendance">
+        <label for="newAttendanceStudentId">Label Text</label>
+        <input type="number" id="newAttendanceStudentId" required name="newAttendanceStudentId">
+        <label for="newAttendanceCourseId">Label Text</label>
+        <input type="number" id="newAttendanceCourseId" required name="newAttendanceCourseId">
+        <label for="newAttendanceLessonDate">Label Text</label>
+        <input type="datetime-local" id="newAttendanceLessonDate" required name="newAttendanceLessonDate">
+        <label for="newAttendanceIsPresent">Label Text</label>
+        <input type="text" id="newAttendanceIsPresent" required name="newAttendanceIsPresent">
+        <input type="button" id="newAttendanceButton" value="Add New Attendance Record">
+    </form>
+
+    <form id="updateAttendanceRecord">
+        <label for="updateAttendanceId">Label Text</label>
+        <input type="number" id="updateAttendanceId" required name="updateAttendanceId">
+        <label for="updateAttendanceStudentId">Label Text</label>
+        <input type="number" id="updateAttendanceStudentId" required name="updateAttendanceStudentId">
+        <label for="updateAttendanceCourseId">Label Text</label>
+        <input type="number" id="updateAttendanceCourseId" required name="updateAttendanceCourseId">
+        <label for="updateAttendanceLessonDate">Label Text</label>
+        <input type="datetime-local" id="updateAttendanceLessonDate" required name="updateAttendanceLessonDate">
+        <label for="updateAttendanceIsPresent">Label Text</label>
+        <input type="text" id="updateAttendanceIsPresent" required name="updateAttendanceIsPresent">
+        <input type="button" id="updateAttendanceButton" value="Update Attendance Record">
+    </form>
+
+
+</section>
+
+<section id="attendanceButtons" style="flex-direction: row;">
+    <form id="getAttendanceRecord">
+        <label for="getAttendanceId">Label Text</label>
+        <input type="number" id="getAttendanceId" required name="getAttendanceId">
+        <label for="getAttendanceStudentId">Label Text</label>
+        <input type="number" id="getAttendanceStudentId" required name="getAttendanceStudentId">
+        <label for="getAttendanceCourseId">Label Text</label>
+        <input type="number" id="getAttendanceCourseId" required name="getAttendanceCourseId">
+        <input type="button" id="getAttendanceByIdButton" value="Retrieve Attendance Record">
+    </form>
+
+    <form id="deleteAttendanceRecord">
+        <label for="deleteAttendanceId">Label Text</label>
+        <input type="number" id="deleteAttendanceId" required name="deleteAttendanceId">
+        <input type="button" id="deleteAttendanceButton" value="Delete Attendance Record">
+    </form>
+</section>
+
+</body>
+
+</html>

@@ -1,0 +1,88 @@
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         version="4.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee
+         http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd">
+  <display-name>studentAttendanceManagementSystem</display-name>
+
+<welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+</welcome-file-list>
+  <servlet>
+  	<servlet-name>StudentServlet</servlet-name>
+  	<display-name>StudentServlet</display-name>
+  	<description>Student Info Get Method</description>
+  	<servlet-class>com.example.servlet.studentEndpoints.StudentServlet</servlet-class>
+  	<!--Un-comment  below line if you want to instantiate and initialize the servlet during the servlet-container(tomcat) startup-->
+  	<!-- <load-on-startup>1</load-on-startup> -->
+  </servlet>
+
+    <servlet-mapping>
+     <servlet-name>StudentServlet</servlet-name>
+     <url-pattern>/students</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>StudentServletIdEndpoints</servlet-name>
+        <display-name>StudentServletIdEndpoints</display-name>
+        <description>Student Info Post, Put, Delete Methods by student Id</description>
+        <servlet-class>com.example.servlet.studentEndpoints.StudentServletIdEndpoints</servlet-class>
+        <!--Un-comment  below line if you want to instantiate and initialize the servlet during the servlet-container(tomcat) startup-->
+        <!-- <load-on-startup>1</load-on-startup> -->
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>StudentServletIdEndpoints</servlet-name>
+        <url-pattern>/students/*</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>CourseServlet</servlet-name>
+        <display-name>CourseServlet</display-name>
+        <description>Get and Post Methods for Courses</description>
+        <servlet-class>com.example.servlet.CourseServlet</servlet-class>
+        <!--Un-comment  below line if you want to instantiate and initialize the servlet during the servlet-container(tomcat) startup-->
+        <!-- <load-on-startup>1</load-on-startup> -->
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>CourseServlet</servlet-name>
+        <url-pattern>/courses</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>AttendanceServlet</servlet-name>
+        <display-name>AttendanceServlet</display-name>
+        <description>Post Method for Attendance</description>
+        <servlet-class>com.example.servlet.attendanceEndpoints.AttendanceServlet</servlet-class>
+        <!--Un-comment  below line if you want to instantiate and initialize the servlet during the servlet-container(tomcat) startup-->
+        <!-- <load-on-startup>1</load-on-startup> -->
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>AttendanceServlet</servlet-name>
+        <url-pattern>/attendance</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>AttendanceServletIdEndpoints</servlet-name>
+        <display-name>AttendanceServletIdEndpoints</display-name>
+        <description>Get, Put, Delete Methods for Attendance Records</description>
+        <servlet-class>com.example.servlet.attendanceEndpoints.AttendanceServletIdEndpoints</servlet-class>
+        <!--Un-comment  below line if you want to instantiate and initialize the servlet during the servlet-container(tomcat) startup-->
+        <!-- <load-on-startup>1</load-on-startup> -->
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>AttendanceServletIdEndpoints</servlet-name>
+        <url-pattern>/attendance/*</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+    <servlet-name>default</servlet-name>
+    <url-pattern>/</url-pattern>
+  </servlet-mapping> 
+
+</web-app>
+
+
